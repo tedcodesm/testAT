@@ -1,53 +1,87 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import Africastaking from 'africastalking';
+import AfricasTalking from 'africastalking';
 
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
 
-const at = Africastaking({
-    apiKey: process.env.AFRICASTALKING_API_KEY,
-    username: process.env.AFRICASTALKING_USERNAME
-})
+// Debug env values
+console.log('USERNAME:', process.env.AFRICASTALKING_USERNAME);
+console.log(
+  'API KEY EXISTS:',
+  process.env.AFRICASTALKING_API_KEY ? 'YES' : 'NO'
+);
 
-// Initialize the Express app
-const sms = at.SMS
-
-
-// Endpoint to send a message
-app.post('/send-sms', async(req , res) => {
-    const { phoneNumber } = req.body;
-    //the Phone number should start with country code +254712345678 ->format
-    if (!phoneNumber) {
-        return res.status(400).json({ message: 'Phone number not found 4' });
-    }
-    try {
-        const result = await sms.send({
-            from: 'AFTKNG',//The Alphanumeric sender ID, yours will be different so change it to yours
-            to: phoneNumber,
-            message: 'Hello from AfricasTalking!',
-        });
-
-        res.status(200).json({
-            status: 'success',
-            data: { result }
-        });
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).json({ message: 'An error occurred while sending SMS' });
-    }
+const africastalking = AfricasTalking({
+  apiKey: process.env.AFRICASTALKING_API_KEY,
+  username: process.env.AFRICASTALKING_USERNAME,
 });
 
+const sms = africastalking.SMS;
 
+app.post('/send-sms', async (req, res) => {
+  const { phoneNumber } = req.body;
 
-// Start the server
+  if (!phoneNumber) {
+    return res.status(400).json({
+      success: false,
+      message: 'Phone number is required',
+    });
+  }
+
+  try {
+    const result = await sms.send({
+      to: [phoneNumber],
+      message: 'Hello im devtrix test if its working!',
+    });
+
+    console.log('SMS API RESULT:', JSON.stringify(result, null, 2));
+
+    const recipient = result?.SMSMessageData?.Recipients?.[0];
+    // If recipient is blacklisted, return actionable 409 so callers can handle it
+    if (recipient?.status === 'UserInBlacklist' || recipient?.statusCode === 406) {
+      return res.status(409).json({
+        success: false,
+        message: 'Recipient is blacklisted (opted-out) and did not receive the message',
+        recipient: {
+          number: recipient.number,
+          status: recipient.status,
+          statusCode: recipient.statusCode,
+          messageId: recipient.messageId,
+        },
+        guidance: {
+          dashboard: 'Remove the number from AfricasTalking dashboard opt-outs/blacklist',
+          userAction: 'Ask the recipient to opt in (e.g. reply START) per AfricasTalking flow',
+        },
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      result,
+      recipientStatus: recipient?.status,
+      recipientStatusCode: recipient?.statusCode,
+      messageId: recipient?.messageId,
+    });
+  } catch (error) {
+    const atData = error.response?.data || null;
+    console.error('AfricaTalking error:', JSON.stringify(atData || error.message, null, 2));
+
+    // If AT returned a structured response, forward that so callers can act on it
+    return res.status(error.response?.status || 500).json({
+      success: false,
+      message: 'Failed to send SMS',
+      africastalking: atData || { message: error.message },
+    });
+  }
+});
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
