@@ -1,0 +1,38 @@
+{
+  "1": {
+    "id": 1,
+    "ownerPhone": "254700111111",
+    "name": "Pipe Bender",
+    "description": "Heavy duty pipe bender, manual",
+    "condition": "good",
+    "price": 600,
+    "deposit": 1000,
+    "available": true,
+    "history": [],
+    "createdAt": 1784288546172
+  },
+  "2": {
+    "id": 2,
+    "ownerPhone": "254700111111",
+    "name": "Welding Machine",
+    "description": "Arc welder, 200A",
+    "condition": "good",
+    "price": 800,
+    "deposit": 2000,
+    "available": true,
+    "history": [],
+    "createdAt": 1784288546172
+  },
+  "3": {
+    "id": 3,
+    "ownerPhone": "254783862919",
+    "name": "saw",
+    "description": "",
+    "condition": "good",
+    "price": 100,
+    "deposit": 0,
+    "available": false,
+    "history": [],
+    "createdAt": 1784290019228
+  }
+}

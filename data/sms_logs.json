@@ -1,0 +1,166 @@
+[
+  {
+    "phone": "254783862919",
+    "message": "🔧 JuaKali Link: Devtrix requested your saw for 5 day(s). \nReply via USSD or app to accept/decline. \nExchange ID: EX-2",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293425560
+  },
+  {
+    "phone": "254783862919",
+    "message": "✅ JuaKali Link: Your request for saw was ACCEPTED! \nContact owner: 254783862919\nExchange ID: EX-1\nPlease arrange pickup.",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293690800
+  },
+  {
+    "phone": "254783862919",
+    "message": "❌ JuaKali Link: Your request for saw was DECLINED. \nSearch for alternatives via USSD.\nExchange ID: EX-2",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293990953
+  },
+  {
+    "phone": "254783862919",
+    "message": "🚨 JuaKali Emergency: Your request for \"saw\" has been broadcast to 0 nearby artisans. \nYou will be contacted if someone can help.",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784294837722
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali Link SMS test from server.js",
+    "status": "failed",
+    "response": {
+      "error": "\"to[0]\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784554654225
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali test",
+    "status": "failed",
+    "response": {
+      "error": "\"to[0]\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784554681512
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali test",
+    "status": "failed",
+    "response": {
+      "error": "\"to[0]\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784554728036
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali test",
+    "status": "failed",
+    "response": {
+      "error": "\"to[0]\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784554773572
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali Link SMS is working!",
+    "status": "failed",
+    "response": {
+      "error": "\"to[0]\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784554814820
+  },
+  {
+    "phone": "+254700111111",
+    "message": "JuaKali Link SMS works!",
+    "status": "sent",
+    "response": {
+      "SMSMessageData": {
+        "Message": "Sent to 0/1 Total Cost: 0",
+        "Recipients": [
+          {
+            "cost": "0",
+            "messageId": "None",
+            "number": "+254700111111",
+            "status": "UserInBlacklist",
+            "statusCode": 406
+          }
+        ]
+      }
+    },
+    "timestamp": 1784554854547
+  },
+  {
+    "phone": "+254783862919",
+    "message": "🔧 JuaKali Link: Devtrix requested your lawn mower for 5 day(s). \nReply via USSD or app to accept/decline. \nExchange ID: EX-3",
+    "status": "sent",
+    "response": {
+      "SMSMessageData": {
+        "Message": "Sent to 1/1 Total Cost: KES 0.8000",
+        "Recipients": [
+          {
+            "cost": "KES 0.8000",
+            "messageId": "ATXid_a4f7ae67f9d1a54d7b283b9d1809ffb6",
+            "messageParts": 1,
+            "number": "+254783862919",
+            "status": "Success",
+            "statusCode": 100
+          }
+        ]
+      }
+    },
+    "timestamp": 1784555018346
+  },
+  {
+    "phone": "+254783862919",
+    "message": "🔧 JuaKali Link: Devtrix requested your hammer for 2 day(s). \nReply via USSD or app to accept/decline. \nExchange ID: EX-4",
+    "status": "sent",
+    "response": {
+      "SMSMessageData": {
+        "Message": "Sent to 1/1 Total Cost: KES 0.8000",
+        "Recipients": [
+          {
+            "cost": "KES 0.8000",
+            "messageId": "ATXid_4f3a14a69f0155b970b9d11669c0badc",
+            "messageParts": 1,
+            "number": "+254783862919",
+            "status": "Success",
+            "statusCode": 100
+          }
+        ]
+      }
+    },
+    "timestamp": 1784555447020
+  },
+  {
+    "phone": "+254783862919",
+    "message": "❌ JuaKali Link: Your request for lawn mower was DECLINED. \nSearch for alternatives via USSD.\nExchange ID: EX-3",
+    "status": "sent",
+    "response": {
+      "SMSMessageData": {
+        "Message": "Sent to 1/1 Total Cost: KES 0.8000",
+        "Recipients": [
+          {
+            "cost": "KES 0.8000",
+            "messageId": "ATXid_64bf164109d4c5d24a81be775d263100",
+            "messageParts": 1,
+            "number": "+254783862919",
+            "status": "Success",
+            "statusCode": 100
+          }
+        ]
+      }
+    },
+    "timestamp": 1784555527757
+  }
+]

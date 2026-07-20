@@ -1,0 +1,13 @@
+{
+  "nextArtisanId": 4,
+  "nextToolId": 4,
+  "nextExchangeId": 3,
+  "trades": [
+    "Welder",
+    "Carpenter",
+    "Mechanic",
+    "Tailor",
+    "Electrician"
+  ],
+  "lastBackup": 1784298438354
+}

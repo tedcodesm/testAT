@@ -1,0 +1,51 @@
+{
+  "254700111111": {
+    "id": "ART-001",
+    "phone": "254700111111",
+    "name": "Otieno Welding",
+    "trade": "Welder",
+    "location": "Kariobangi, near St. Peters Church",
+    "lat": -1.2545,
+    "lng": 36.8825,
+    "experience": 5,
+    "certifications": "",
+    "approved": true,
+    "ratings": [
+      4,
+      5,
+      5
+    ],
+    "createdAt": 1784288546162
+  },
+  "254700222222": {
+    "id": "ART-002",
+    "phone": "254700222222",
+    "name": "Mama Njeri Tailoring",
+    "trade": "Tailor",
+    "location": "Gikomba Market, Section 3",
+    "lat": -1.2841,
+    "lng": 36.8312,
+    "experience": 8,
+    "certifications": "",
+    "approved": true,
+    "ratings": [
+      3,
+      4
+    ],
+    "createdAt": 1784288546162
+  },
+  "254783862919": {
+    "id": "ART-003",
+    "phone": "254783862919",
+    "name": "Devtrix",
+    "trade": "Electrician",
+    "location": "Githurai",
+    "lat": -1.2939198232204303,
+    "lng": 36.805441534580304,
+    "experience": 0,
+    "certifications": "",
+    "approved": false,
+    "ratings": [],
+    "createdAt": 1784289898195
+  }
+}

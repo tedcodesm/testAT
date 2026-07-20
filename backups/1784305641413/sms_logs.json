@@ -1,0 +1,38 @@
+[
+  {
+    "phone": "254783862919",
+    "message": "🔧 JuaKali Link: Devtrix requested your saw for 5 day(s). \nReply via USSD or app to accept/decline. \nExchange ID: EX-2",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293425560
+  },
+  {
+    "phone": "254783862919",
+    "message": "✅ JuaKali Link: Your request for saw was ACCEPTED! \nContact owner: 254783862919\nExchange ID: EX-1\nPlease arrange pickup.",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293690800
+  },
+  {
+    "phone": "254783862919",
+    "message": "❌ JuaKali Link: Your request for saw was DECLINED. \nSearch for alternatives via USSD.\nExchange ID: EX-2",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784293990953
+  },
+  {
+    "phone": "254783862919",
+    "message": "🚨 JuaKali Emergency: Your request for \"saw\" has been broadcast to 0 nearby artisans. \nYou will be contacted if someone can help.",
+    "status": "failed",
+    "response": {
+      "error": "\"to\" failed custom validation because Invalid country calling code; "
+    },
+    "timestamp": 1784294837722
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "EX-1": {
+    "id": "EX-1",
+    "toolId": 3,
+    "toolName": "saw",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 3,
+    "status": "accepted",
+    "createdAt": 1784290097101
+  },
+  "EX-2": {
+    "id": "EX-2",
+    "toolId": 3,
+    "toolName": "saw",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 5,
+    "status": "declined",
+    "createdAt": 1784293425365
+  },
+  "EX-3": {
+    "id": "EX-3",
+    "toolId": 4,
+    "toolName": "lawn mower",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 5,
+    "status": "declined",
+    "createdAt": 1784555017643
+  },
+  "EX-4": {
+    "id": "EX-4",
+    "toolId": 5,
+    "toolName": "hammer",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 2,
+    "status": "requested",
+    "createdAt": 1784555446303
+  }
+}

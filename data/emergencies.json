@@ -1,0 +1,25 @@
+[
+  {
+    "id": "EMG-1",
+    "requester": {
+      "id": "ART-003",
+      "phone": "254783862919",
+      "name": "Devtrix",
+      "trade": "Electrician",
+      "location": "Githurai",
+      "lat": -1.2939198232204303,
+      "lng": 36.805441534580304,
+      "experience": 0,
+      "certifications": "",
+      "approved": false,
+      "ratings": [],
+      "createdAt": 1784289898195
+    },
+    "tool": "saw",
+    "description": "saw",
+    "radius": 1,
+    "createdAt": 1784294837704,
+    "expiresAt": 1784302037704,
+    "notificationsSent": false
+  }
+]

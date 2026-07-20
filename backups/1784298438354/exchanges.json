@@ -1,0 +1,24 @@
+{
+  "EX-1": {
+    "id": "EX-1",
+    "toolId": 3,
+    "toolName": "saw",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 3,
+    "status": "accepted",
+    "createdAt": 1784290097101
+  },
+  "EX-2": {
+    "id": "EX-2",
+    "toolId": 3,
+    "toolName": "saw",
+    "ownerPhone": "254783862919",
+    "borrowerPhone": "254783862919",
+    "borrowerName": "Devtrix",
+    "days": 5,
+    "status": "declined",
+    "createdAt": 1784293425365
+  }
+}
